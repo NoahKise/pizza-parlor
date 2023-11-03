@@ -14,5 +14,6 @@ Pizza.prototype.costCalculate = function() {
     pizzaCost += 35;
   }
   pizzaCost += this.veggieToppings.length * 2;
+  pizzaCost += this.meatToppings.length * 3;
   return pizzaCost;
 };

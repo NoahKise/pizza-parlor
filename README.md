@@ -19,3 +19,7 @@ Expected Output: 20
 Test: It should check the number of veggie toppings on the pizza and add to the cost based on how many are present.
 Code: myPizza.costCalculate();
 Expected Output: 24
+
+Test: It should check the number of meat toppings on the pizza and add to the cost based on how many are present.
+Code: myPizza.costCalculate;
+Expected Output: 30;
