@@ -23,7 +23,7 @@ Pizza.prototype.costCalculate = function () {
     pizzaCost += this.proteinToppings.length * 5;
   }
   if (this.sauce === "pesto") {
-    pizzaCost += 2
+    pizzaCost += 2;
   }
   return pizzaCost;
 };
@@ -69,7 +69,7 @@ function formHandler(event) {
     }
   }
   const inputName = document.querySelector("input#pizzaName").value;
-  let pizzaOrder = new Pizza(inputSize, inputSauce, inputCheese, inputVeggieToppings, inputProteinToppings)
+  let pizzaOrder = new Pizza(inputSize, inputSauce, inputCheese, inputVeggieToppings, inputProteinToppings);
   let pizzaOrderCost = pizzaOrder.costCalculate();
   let cartItem = {
     orderedPizza: pizzaOrder,
@@ -84,7 +84,6 @@ function formHandler(event) {
   const formattedCheese = formatChoices(cartItem.orderedPizza.cheese);
   const formattedVeggieToppings = formatToppings(cartItem.orderedPizza.veggieToppings);
   const formattedProteinToppings = formatToppings(cartItem.orderedPizza.proteinToppings);
-
 
   console.log(cartItem.orderedPizzaName);
   const name = document.createElement("h1");
@@ -121,8 +120,6 @@ function placeOrder(event) {
     behavior: "smooth",
   });
 }
-
-
 
 window.addEventListener("load", function () {
   document.querySelector("form#pizzaBuilder").addEventListener("submit", formHandler);
