@@ -105,12 +105,21 @@ function formHandler(event) {
   const cartDiv = document.querySelector("div#cart");
   cartDiv.append(name, pizzaSize, pizzaSauce, pizzaCheese, pizzaVegTops, pizzaProTops, price);
 
+  window.scrollTo({
+    top: 1200,
+    behavior: "smooth",
+  });
+
   document.getElementById("pizzaBuilder").reset();
 }
 
 function placeOrder(event) {
   event.preventDefault();
   document.getElementById("workingOnIt").removeAttribute("class");
+  window.scrollTo({
+    top: 1800,
+    behavior: "smooth",
+  });
 }
 
 
