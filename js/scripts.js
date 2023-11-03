@@ -117,7 +117,7 @@ function placeOrder(event) {
   event.preventDefault();
   document.getElementById("workingOnIt").removeAttribute("class");
   window.scrollTo({
-    top: 1800,
+    top: 100000,
     behavior: "smooth",
   });
 }
