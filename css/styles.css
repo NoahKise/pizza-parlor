@@ -120,6 +120,34 @@ button {
   font-family: 'Courier New', Courier, monospace;
 }
 
+#workingOnIt {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fac66b;
+  border: 2px solid black;
+  box-sizing: border-box;
+  width: 95vw;
+  min-width: 350px;
+  max-width: 700px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+#workingOnIt h3 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#workingOnIt h1 {
+  font-family: pizza;
+}
+
+#workingOnIt h6 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+}
+
 @font-face {
   font-family: pizza;
   src: url(../font/Pizzaman-qZ6V2.ttf);
