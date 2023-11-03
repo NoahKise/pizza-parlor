@@ -26,4 +26,4 @@ Expected Output: 30;
 
 Test: It should charge more per topping if the pizza size is giant.
 Code: myPizza.costCalculate(); (assuming giant pizza with 1 veggie topping and 1 meat topping)
-Expected Output:
+Expected Output: 43
