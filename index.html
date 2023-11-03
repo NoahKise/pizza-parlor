@@ -9,64 +9,74 @@
 </head>
 
 <body>
-  <form id="pizzaBuilder">
-    <label for="size">Size:</label>
-    <select id="size" name="size">
-      <option value="large" id="large">Large</option>
-      <option value="giant" id="giant">Giant</option>
-    </select>
-    <label for="sauce">Sauce:</label>
-    <select id="sauce" name="sauce">
-      <option value="red" id="red">Red</option>
-      <option value="white" id="white">White</option>
-      <option value="bbq" id="bbq">BBQ</option>
-      <option value="pesto" id="pesto">Pesto</option>
-    </select>
-    <select id="cheese" name="cheese">
-      <option value="mozzarella" id="mozzarella">Mozzarella</option>
-      <option value="veganMozzarella" id="veganMozzarella">Vegan Mozzarella</option>
-    </select>
+  <img src="img/menu.jpg" alt="pizza menu">
+  <div class="first3Forms">
+    <form id="pizzaBuilder">
+      <label for="size">Size:</label>
+      <select id="size" name="size">
+        <option value="large" id="large">Large</option>
+        <option value="giant" id="giant">Giant</option>
+      </select>
+      <label for="sauce">Sauce:</label>
+      <select id="sauce" name="sauce">
+        <option value="red" id="red">Red</option>
+        <option value="white" id="white">White</option>
+        <option value="bbq" id="bbq">BBQ</option>
+        <option value="pesto" id="pesto">Pesto</option>
+      </select>
+      <label for="cheese">Cheese:</label>
+      <select id="cheese" name="cheese">
+        <option value="mozzarella" id="mozzarella">Mozzarella</option>
+        <option value="veganMozzarella" id="veganMozzarella">Vegan Mozzarella</option>
+      </select>
+  </div>
 
-    <h3>Choose Veggie Toppings</h3>
+  <div class="toppings">
+    <div class="top">
+      <h3>Choose Veggie Toppings</h3>
 
-    <input type="checkbox" id="mushrooms" name="vegTop" value="mushrooms">
-    <label for="mushrooms">Mushrooms</label>
-    <input type="checkbox" id="jalapenos" name="vegTop" value="jalapenos">
-    <label for="jalapenos">Jalapenos</label>
-    <input type="checkbox" id="red-onions" name="vegTop" value="red-onions">
-    <label for="red-onions">Red Onions</label>
-    <input type="checkbox" id="hot-pickled-peppers" name="vegTop" value="hot-pickled-peppers">
-    <label for="hot-pickled-peppers">Hot Pickled Peppers</label>
-    <input type="checkbox" id="mixed-olives" name="vegTop" value="mixed-olives">
-    <label for="mixed-olives">Mixed Olives</label>
-    <input type="checkbox" id="pineapple" name="vegTop" value="pineapple">
-    <label for="pineapple">Pineapple</label>
-    <input type="checkbox" id="artichoke-hearts" name="vegTop" value="artichoke-hearts">
-    <label for="artichoke-hearts">Artichoke Hearts</label>
-    <input type="checkbox" id="sundried-tomatoes" name="vegTop" value="sundried-tomatoes">
-    <label for="sundried-tomatoes">Sun-Dried Tomatoes</label>
-    <input type="checkbox" id="basil" name="vegTop" value="basil">
-    <label for="basil">Basil</label>
-    <input type="checkbox" id="roasted-garlic" name="vegTop" value="roasted-garlic">
-    <label for="roasted-garlic">Roasted Garlic</label>
+      <input type="checkbox" id="mushrooms" name="vegTop" value="mushrooms">
+      <label for="mushrooms">Mushrooms</label><br>
+      <input type="checkbox" id="jalapenos" name="vegTop" value="jalapenos">
+      <label for="jalapenos">Jalapenos</label><br>
+      <input type="checkbox" id="red-onions" name="vegTop" value="red-onions">
+      <label for="red-onions">Red Onions</label><br>
+      <input type="checkbox" id="hot-pickled-peppers" name="vegTop" value="hot-pickled-peppers">
+      <label for="hot-pickled-peppers">Hot Pickled Peppers</label><br>
+      <input type="checkbox" id="mixed-olives" name="vegTop" value="mixed-olives">
+      <label for="mixed-olives">Mixed Olives</label><br>
+      <input type="checkbox" id="pineapple" name="vegTop" value="pineapple">
+      <label for="pineapple">Pineapple</label><br>
+      <input type="checkbox" id="artichoke-hearts" name="vegTop" value="artichoke-hearts">
+      <label for="artichoke-hearts">Artichoke Hearts</label><br>
+      <input type="checkbox" id="sundried-tomatoes" name="vegTop" value="sundried-tomatoes">
+      <label for="sundried-tomatoes">Sun-Dried Tomatoes</label><br>
+      <input type="checkbox" id="basil" name="vegTop" value="basil">
+      <label for="basil">Basil</label><br>
+      <input type="checkbox" id="roasted-garlic" name="vegTop" value="roasted-garlic">
+      <label for="roasted-garlic">Roasted Garlic</label><br>
+    </div>
+    <div class="top">
+      <h3>Choose Protein Toppings</h3>
 
-    <h3>Choose Protein Toppings</h3>
+      <input type="checkbox" id="pepperoni" name="proTop" value="pepperoni">
+      <label for="pepperoni">Pepperoni</label><br>
+      <input type="checkbox" id="sausage" name="proTop" value="sausage">
+      <label for="sausage">Sausage</label><br>
+      <input type="checkbox" id="guanciale" name="proTop" value="guanciale">
+      <label for="guanciale">Guanciale</label><br>
+      <input type="checkbox" id="soy-curls" name="proTop" value="soy-curls">
+      <label for="soy-curls">Soy Curls</label><br>
+      <input type="checkbox" id="vegan-sausage" name="proTop" value="vegan-sausage">
+      <label for="vegan-sausage">Vegan Sausage</label><br>
+      <br>
+    </div>
+  </div>
 
-    <input type="checkbox" id="pepperoni" name="proTop" value="pepperoni">
-    <label for="pepperoni">Pepperoni</label>
-    <input type="checkbox" id="sausage" name="proTop" value="sausage">
-    <label for="sausage">Sausage</label>
-    <input type="checkbox" id="guanciale" name="proTop" value="guanciale">
-    <label for="guanciale">Guanciale</label>
-    <input type="checkbox" id="soy-curls" name="proTop" value="soy-curls">
-    <label for="soy-curls">Soy Curls</label>
-    <input type="checkbox" id="vegan-sausage" name="proTop" value="vegan-sausage">
-    <label for="vegan-sausage">Vegan Sausage</label>
+  <label for="pizzaName">Name Your Pizza</label>
+  <input type="text" id="pizzaName" name="pizzaName">
 
-    <label for="pizzaName">Name Your Pizza</label>
-    <input type="text" id="pizzaName" name="pizzaName">
-
-    <button class="button" type="submit" value="submit">Add to Cart</button>
+  <button class="button" type="submit" value="submit">Add to Cart</button>
 
   </form>
   <div id="cart" class="hidden">

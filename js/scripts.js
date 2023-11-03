@@ -22,6 +22,9 @@ Pizza.prototype.costCalculate = function () {
     pizzaCost += this.veggieToppings.length * 3;
     pizzaCost += this.proteinToppings.length * 5;
   }
+  if (this.sauce === "pesto") {
+    pizzaCost += 2
+  }
   return pizzaCost;
 };
 
@@ -91,9 +94,11 @@ function formHandler(event) {
   pizzaVegTops.append("Veggie Toppings: " + formattedVeggieToppings.join(', '));
   const pizzaProTops = document.createElement("p");
   pizzaProTops.append("Protein Toppings: " + formattedProteinToppings.join(', '));
+  const price = document.createElement("h3");
+  price.append("$" + cartItem.orderedPizzaCost);
 
   const body = document.querySelector("body");
-  body.append(name, pizzaSize, pizzaSauce, pizzaCheese, pizzaVegTops, pizzaProTops);
+  body.append(name, pizzaSize, pizzaSauce, pizzaCheese, pizzaVegTops, pizzaProTops, price);
 
   return cartItem;
 }
