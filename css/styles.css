@@ -1,3 +1,15 @@
+body {
+  font-family: pizza;
+}
+
+img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 700px;
+  width: 95vw;
+}
+
 .hidden {
   display: none;
 }
@@ -12,14 +24,34 @@
 }
 
 .top {
-  flex: 45%;
+  flex: 50%;
 }
 
 .first3Forms {
+  display: flex;
+  width: 95vw;
+  min-width: 350px;
+  max-width: 700px;
   margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 20px;
 }
 
+.selectForm {
+  flex: 33%;
+  min-width: 100px;
+}
+
 .first3Forms select {
-  font-size: 20px;
+}
+
+#nameYourPizza {
+  text-align: center;
+  margin-top: 10px;
+}
+
+@font-face {
+  font-family: pizza;
+  src: url(../font/Pizzaman-qZ6V2.ttf);
 }

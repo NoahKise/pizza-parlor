@@ -11,24 +11,30 @@
 <body>
   <img src="img/menu.jpg" alt="pizza menu">
   <div class="first3Forms">
-    <form id="pizzaBuilder">
-      <label for="size">Size:</label>
-      <select id="size" name="size">
-        <option value="large" id="large">Large</option>
-        <option value="giant" id="giant">Giant</option>
-      </select>
-      <label for="sauce">Sauce:</label>
+    <div class="selectForm">
+      <form id="pizzaBuilder">
+        <label for="size">Size:</label><br>
+        <select id="size" name="size">
+          <option value="large" id="large">Large</option>
+          <option value="giant" id="giant">Giant</option>
+        </select>
+    </div>
+    <div class="selectForm">
+      <label for="sauce">Sauce:</label><br>
       <select id="sauce" name="sauce">
         <option value="red" id="red">Red</option>
         <option value="white" id="white">White</option>
         <option value="bbq" id="bbq">BBQ</option>
         <option value="pesto" id="pesto">Pesto</option>
       </select>
-      <label for="cheese">Cheese:</label>
+    </div>
+    <div class="selectForm">
+      <label for="cheese">Cheese:</label><br>
       <select id="cheese" name="cheese">
         <option value="mozzarella" id="mozzarella">Mozzarella</option>
         <option value="veganMozzarella" id="veganMozzarella">Vegan Mozzarella</option>
       </select>
+    </div>
   </div>
 
   <div class="toppings">
@@ -72,12 +78,12 @@
       <br>
     </div>
   </div>
-
-  <label for="pizzaName">Name Your Pizza</label>
-  <input type="text" id="pizzaName" name="pizzaName">
-
-  <button class="button" type="submit" value="submit">Add to Cart</button>
-
+  <div id="nameYourPizza">
+    <label for="pizzaName">Name Your Pizza:</label><br>
+    <input type="text" id="pizzaName" name="pizzaName"><br>
+    <br>
+    <button class="button" type="submit" value="submit">Add to Cart</button>
+  </div>
   </form>
   <div id="cart" class="hidden">
     <h2>Cart</h2>
