@@ -13,5 +13,9 @@ Expected Output: Pizza { size: "large", sauce: "red", cheese: "mozzarella", vegg
 #### Describe Pizza.prototype.costCalculate
 
 Test: It should check the size of the pizza and based on the size add the cost of that size to a new variable called pizzaCost, then return pizzaCost.
-Code: costCalculate(myPizza);
+Code: myPizza.costCalculate();
 Expected Output: 20
+
+Test: It should check the number of veggie toppings on the pizza and add to the cost based on how many are present.
+Code: myPizza.costCalculate();
+Expected Output: 24
