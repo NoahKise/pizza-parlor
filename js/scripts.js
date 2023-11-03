@@ -85,7 +85,6 @@ function formHandler(event) {
   const formattedVeggieToppings = formatToppings(cartItem.orderedPizza.veggieToppings);
   const formattedProteinToppings = formatToppings(cartItem.orderedPizza.proteinToppings);
 
-  console.log(cartItem.orderedPizzaName);
   const name = document.createElement("h1");
   name.append('"' + cartItem.orderedPizzaName + '"');
   const pizzaSize = document.createElement("p");

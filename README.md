@@ -55,6 +55,10 @@ Expected Output: 43
 
 ## Known Bugs
 
+* The variable totalCartCost is defined globally, and I would have liked to write another function for it to avoid this but ran out of time.
+
+* After you place an order you can still add more items to the cart. Again, something I would like to change but ran out of time.
+
 * If vegan mozzarella is selected as the cheese, it is displayed in the cart without a space between vegan and mozzarella, further formatting is required that I didn't notice until too late.
 
 ## License
