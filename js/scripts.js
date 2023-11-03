@@ -29,15 +29,27 @@ function formHandler(event) {
   const inputCheese = document.querySelector("select#cheese").value;
   let inputVeggieToppings = [];
   let possibleVeggieToppings = document.getElementsByName("vegTop");
-  console.log(possibleVeggieToppings.length);
   for (let i = 0; i < possibleVeggieToppings.length; i++) {
     if (possibleVeggieToppings[i].checked) {
       inputVeggieToppings.push(possibleVeggieToppings[i].value);
     }
   }
-  console.log(inputVeggieToppings);
-  return inputVeggieToppings;
-
+  let inputProteinToppings = [];
+  let possibleProteinToppings = document.getElementsByName("proTop");
+  for (let i = 0; i < possibleProteinToppings.length; i++) {
+    if (possibleProteinToppings[i].checked) {
+      inputProteinToppings.push(possibleProteinToppings[i].value);
+    }
+  }
+  let pizzaOrder = {
+    size: inputSize,
+    sauce: inputSauce,
+    cheese: inputCheese,
+    veggieToppings: inputProteinToppings,
+    proteinToppings: inputVeggieToppings,
+  }
+  console.log(pizzaOrder);
+  return pizzaOrder;
 }
 
 
