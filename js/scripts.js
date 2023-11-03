@@ -45,9 +45,12 @@ function formatToppings(toppings) {
   return toppings;
 }
 
+let totalCartCost = 0;
+
 function formHandler(event) {
   event.preventDefault();
   document.getElementById("cart").removeAttribute("class");
+  document.getElementById("total").removeAttribute("class");
   const inputSize = document.querySelector("select#size").value;
   const inputSauce = document.querySelector("select#sauce").value;
   const inputCheese = document.querySelector("select#cheese").value;
@@ -73,6 +76,8 @@ function formHandler(event) {
     orderedPizzaCost: pizzaOrderCost,
     orderedPizzaName: inputName,
   }
+  totalCartCost += (cartItem.orderedPizzaCost);
+  document.getElementById("totalCost").innerText = "Total: $" + totalCartCost;
 
   const formattedSize = formatChoices(cartItem.orderedPizza.size);
   const formattedSauce = formatChoices(cartItem.orderedPizza.sauce);
