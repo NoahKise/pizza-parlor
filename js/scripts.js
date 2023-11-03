@@ -41,15 +41,14 @@ function formHandler(event) {
       inputProteinToppings.push(possibleProteinToppings[i].value);
     }
   }
-  let pizzaOrder = {
-    size: inputSize,
-    sauce: inputSauce,
-    cheese: inputCheese,
-    veggieToppings: inputProteinToppings,
-    proteinToppings: inputVeggieToppings,
+  let pizzaOrder = new Pizza(inputSize, inputSauce, inputCheese, inputVeggieToppings, inputProteinToppings)
+  let pizzaOrderCost = pizzaOrder.costCalculate();
+  let cartItem = {
+    orderedPizza: pizzaOrder,
+    orderedPizzaCost: pizzaOrderCost,
   }
-  console.log(pizzaOrder);
-  return pizzaOrder;
+  console.log(cartItem);
+  return cartItem;
 }
 
 
