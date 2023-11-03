@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,7 +7,48 @@
   <script src="js/scripts.js"></script>
   <title>Pizza Parlor</title>
 </head>
+
 <body>
-  
+  <form id="pizzaBuilder">
+    <label for="size">Size:</label>
+    <select id="size" name="size">
+      <option value="large" id="large">Large</option>
+      <option value="giant" id="giant">Giant</option>
+    </select>
+    <label for="sauce">Sauce:</label>
+    <select id="sauce" name="sauce">
+      <option value="red" id="red">Red</option>
+      <option value="white" id="white">White</option>
+      <option value="bbq" id="bbq">BBQ</option>
+      <option value="pesto" id="pesto">Pesto</option>
+    </select>
+    <select id="cheese" name="cheese">
+      <option value="mozzarella" id="mozzarella">Mozzarella</option>
+      <option value="veganMozzarella" id="veganMozzarella">Vegan Mozzarella</option>
+    </select>
+    <h3>Choose Veggie Toppings</h3>
+    <input type="checkbox" id="mushrooms" name="mushrooms" value="mushrooms">
+    <label for="mushrooms">Mushrooms</label>
+    <input type="checkbox" id="jalapenos" name="jalapenos" value="jalapenos">
+    <label for="jalapenos">Jalapenos</label>
+    <input type="checkbox" id="red-onions" name="red-onions" value="red-onions">
+    <label for="red-onions">Red Onions</label>
+    <input type="checkbox" id="hot-pickled-peppers" name="hot-pickled-peppers" value="hot-pickled-peppers">
+    <label for="hot-pickled-peppers">Hot Pickled Peppers</label>
+    <input type="checkbox" id="mixed-olives" name="mixed-olives" value="mixed-olives">
+    <label for="mixed-olives">Mixed Olives</label>
+    <input type="checkbox" id="pineapple" name="pineapple" value="pineapple">
+    <label for="pineapple">Pineapple</label>
+    <input type="checkbox" id="artichoke-hearts" name="artichoke-hearts" value="artichoke-hearts">
+    <label for="artichoke-hearts">Artichoke Hearts</label>
+    <input type="checkbox" id="sundried-tomatoes" name="sundried-tomatoes" value="sundried-tomatoes">
+    <label for="sundried-tomatoes">Sun-Dried Tomatoes</label>
+    <input type="checkbox" id="basil" name="basil" value="basil">
+    <label for="basil">Basil</label>
+    <input type="checkbox" id="roasted-garlic" name="roasted-garlic" value="roasted-garlic">
+    <label for="roasted-garlic">Roasted Garlic</label>
+    <h3>Choose Protein Toppings</h3>
+  </form>
 </body>
+
 </html>
