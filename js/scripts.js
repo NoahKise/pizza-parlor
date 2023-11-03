@@ -30,6 +30,7 @@ Pizza.prototype.costCalculate = function () {
 function formatChoices(choice) {
   return choice.charAt(0).toUpperCase() + choice.slice(1);
 }
+
 function formatToppings(toppings) {
   for (let i = 0; i < toppings.length; i++) {
     let words = toppings[i].split('-');
