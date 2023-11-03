@@ -10,10 +10,9 @@ Pizza.prototype.costCalculate = function() {
   let pizzaCost = 0;
   if (this.size === "large") {
     pizzaCost += 20;
-    return pizzaCost;
   } else if (this.size === "giant") {
     pizzaCost += 35;
-    return pizzaCost;
   }
+  pizzaCost += this.veggieToppings.length * 2;
   return pizzaCost;
 };
