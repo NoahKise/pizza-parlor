@@ -94,11 +94,11 @@ function formHandler(event) {
   pizzaVegTops.append("Veggie Toppings: " + formattedVeggieToppings.join(', '));
   const pizzaProTops = document.createElement("p");
   pizzaProTops.append("Protein Toppings: " + formattedProteinToppings.join(', '));
-  const price = document.createElement("h3");
+  const price = document.createElement("h2");
   price.append("$" + cartItem.orderedPizzaCost);
 
-  const body = document.querySelector("body");
-  body.append(name, pizzaSize, pizzaSauce, pizzaCheese, pizzaVegTops, pizzaProTops, price);
+  const cartDiv = document.querySelector("div#cart");
+  cartDiv.append(name, pizzaSize, pizzaSauce, pizzaCheese, pizzaVegTops, pizzaProTops, price);
 
   return cartItem;
 }

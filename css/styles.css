@@ -1,5 +1,6 @@
 body {
   font-family: pizza;
+  background-image: url(../img/tablecloth.avif);
 }
 
 img {
@@ -16,16 +17,38 @@ img {
 
 .toppings {
   display: flex;
+  box-sizing: border-box;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-bottom: 10px;
+  border: 2px solid black;
   width: 95vw;
   min-width: 350px;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #fac66b;
+}
+
+#cart {
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  border: 2px solid black;
+  width: 95vw;
+  min-width: 350px;
+  max-width: 700px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fac66b;
 }
 
 .top {
   flex: 50%;
 }
+
 
 .first3Forms {
   display: flex;
@@ -43,12 +66,31 @@ img {
   min-width: 100px;
 }
 
+select {
+  background-color: #fac66b;
+  margin-top: 8px;
+  border: 2px solid black;
+}
+
+.first3Forms label {
+  background-color: #fac66b;
+  padding: 5px;
+  border: 2px solid black;
+}
+
 .first3Forms select {
 }
 
 #nameYourPizza {
+  box-sizing: border-box;
+  padding: 5px;
+  border: 2px solid black;
   text-align: center;
   margin-top: 10px;
+  background-color: #fac66b;
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @font-face {
