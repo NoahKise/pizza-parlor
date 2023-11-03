@@ -23,3 +23,7 @@ Expected Output: 24
 Test: It should check the number of meat toppings on the pizza and add to the cost based on how many are present.
 Code: myPizza.costCalculate;
 Expected Output: 30;
+
+Test: It should charge more per topping if the pizza size is giant.
+Code: myPizza.costCalculate(); (assuming giant pizza with 1 veggie topping and 1 meat topping)
+Expected Output:

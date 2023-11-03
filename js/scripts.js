@@ -15,8 +15,13 @@ Pizza.prototype.costCalculate = function () {
   } else if (this.size === "giant") {
     pizzaCost += 35;
   }
-  pizzaCost += this.veggieToppings.length * 2;
-  pizzaCost += this.meatToppings.length * 3;
+  if (this.size === "large") {
+    pizzaCost += this.veggieToppings.length * 2;
+    pizzaCost += this.meatToppings.length * 3;
+  } else if (this.size === "giant") {
+    pizzaCost += this.veggieToppings.length * 3;
+    pizzaCost += this.meatToppings.length * 5;
+  }
   return pizzaCost;
 };
 
