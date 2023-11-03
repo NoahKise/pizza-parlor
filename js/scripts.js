@@ -105,11 +105,17 @@ function formHandler(event) {
   const cartDiv = document.querySelector("div#cart");
   cartDiv.append(name, pizzaSize, pizzaSauce, pizzaCheese, pizzaVegTops, pizzaProTops, price);
 
-  return cartItem;
+  document.getElementById("pizzaBuilder").reset();
+}
+
+function placeOrder(event) {
+  event.preventDefault();
+  document.getElementById("workingOnIt").removeAttribute("class");
 }
 
 
 
 window.addEventListener("load", function () {
   document.querySelector("form#pizzaBuilder").addEventListener("submit", formHandler);
+  document.querySelector("form#order").addEventListener("submit", placeOrder);
 });
