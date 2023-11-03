@@ -27,6 +27,20 @@ Pizza.prototype.costCalculate = function () {
 
 // UI Logic
 
+function formatChoices(choice) {
+  return choice.charAt(0).toUpperCase() + choice.slice(1);
+}
+function formatToppings(toppings) {
+  for (let i = 0; i < toppings.length; i++) {
+    let words = toppings[i].split('-');
+    for (let j = 0; j < words.length; j++) {
+      words[j] = words[j].charAt(0).toUpperCase() + words[j].slice(1);
+    }
+    toppings[i] = words.join(' ');
+  }
+  return toppings;
+}
+
 function formHandler(event) {
   event.preventDefault();
   document.getElementById("cart").removeAttribute("class");
@@ -55,19 +69,27 @@ function formHandler(event) {
     orderedPizzaCost: pizzaOrderCost,
     orderedPizzaName: inputName,
   }
+
+  const formattedSize = formatChoices(cartItem.orderedPizza.size);
+  const formattedSauce = formatChoices(cartItem.orderedPizza.sauce);
+  const formattedCheese = formatChoices(cartItem.orderedPizza.cheese);
+  const formattedVeggieToppings = formatToppings(cartItem.orderedPizza.veggieToppings);
+  const formattedProteinToppings = formatToppings(cartItem.orderedPizza.proteinToppings);
+
+
   console.log(cartItem.orderedPizzaName);
   const name = document.createElement("h1");
   name.append('"' + cartItem.orderedPizzaName + '"');
   const pizzaSize = document.createElement("p");
-  pizzaSize.append("Size: " + cartItem.orderedPizza.size);
+  pizzaSize.append("Size: " + formattedSize);
   const pizzaSauce = document.createElement("p");
-  pizzaSauce.append("Sauce: " + cartItem.orderedPizza.sauce);
+  pizzaSauce.append("Sauce: " + formattedSauce);
   const pizzaCheese = document.createElement("p");
-  pizzaCheese.append("Cheese: " + cartItem.orderedPizza.cheese);
+  pizzaCheese.append("Cheese: " + formattedCheese);
   const pizzaVegTops = document.createElement("p");
-  pizzaVegTops.append("Veggie Toppings: " + cartItem.orderedPizza.veggieToppings);
+  pizzaVegTops.append("Veggie Toppings: " + formattedVeggieToppings.join(', '));
   const pizzaProTops = document.createElement("p");
-  pizzaProTops.append("Protein Toppings: " + cartItem.orderedPizza.proteinToppings);
+  pizzaProTops.append("Protein Toppings: " + formattedProteinToppings.join(', '));
 
   const body = document.querySelector("body");
   body.append(name, pizzaSize, pizzaSauce, pizzaCheese, pizzaVegTops, pizzaProTops);
