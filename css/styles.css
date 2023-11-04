@@ -98,9 +98,6 @@ select {
   border: 2px solid black;
 }
 
-.first3Forms select {
-}
-
 #nameYourPizza {
   box-sizing: border-box;
   padding: 5px;
