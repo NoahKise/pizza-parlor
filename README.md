@@ -63,7 +63,7 @@ Expected Output: 43
 
 ## License
 
-Code Licensed under GPL.
+Code Licensed under GPL
 
 Any suggestions for ways I can improve this layout? Reach out to me at noah@kisefamily.com
 
