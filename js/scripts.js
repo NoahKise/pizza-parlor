@@ -36,7 +36,6 @@ Cart.prototype.addToCart = function (itemCost) {
   this.totalCost += itemCost;
 };
 
-
 // UI Logic
 
 function formatChoices(choice) {
@@ -54,7 +53,7 @@ function formatToppings(toppings) {
   return toppings;
 }
 
-let totalCartCost = 0;
+let cart = new Cart();
 
 function formHandler(event) {
   event.preventDefault();
@@ -85,8 +84,8 @@ function formHandler(event) {
     orderedPizzaCost: pizzaOrderCost,
     orderedPizzaName: inputName,
   }
-  totalCartCost += (cartItem.orderedPizzaCost);
-  document.getElementById("totalCost").innerText = "Total: $" + totalCartCost;
+  cart.addToCart(cartItem.orderedPizzaCost);
+  document.getElementById("totalCost").innerText = "Total: $" + cart.totalCost;
 
   const formattedSize = formatChoices(cartItem.orderedPizza.size);
   const formattedSauce = formatChoices(cartItem.orderedPizza.sauce);
