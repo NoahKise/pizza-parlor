@@ -101,7 +101,7 @@ Expected Output: 87
 
 ## License
 
-Code Licensed under GPL
+[GPL](LICENSE.txt)
 
 Any suggestions for ways I can improve this layout? Reach out to me at noah@kisefamily.com
 
