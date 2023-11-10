@@ -47,17 +47,19 @@ Code: let myPizza = new Pizza("large", "pesto", "mozzarella");
 Expected Output: 22
 
 Test: It should check the number of veggie toppings on the pizza and add to the cost based on how many are present.
-Code: let myPizza = new Pizza("large", "red", "mozzarella", ["mushrooms", "olives"]);
+Code: let myPizza = new Pizza("large", "red", "mozzarella", ["mushrooms", "jalapenos"]); 
       myPizza.costCalculate();
 Expected Output: 24
 
 Test: It should check the number of meat toppings on the pizza and add to the cost based on how many are present.
-Code: myPizza.costCalculate;
+Code: let myPizza = new Pizza("large", "red", "mozzarella", ["mushrooms", "jalapenos"], ["pepperoni", "sausage"]);
+      myPizza.costCalculate();
 Expected Output: 30;
 
 Test: It should charge more per topping if the pizza size is giant.
-Code: myPizza.costCalculate(); (assuming giant pizza with 1 veggie topping and 1 meat topping)
-Expected Output: 43
+Code: let myPizza = new Pizza("giant", "red", "mozzarella", ["mushrooms", "jalapenos"], ["pepperoni", "sausage"]);
+      myPizza.costCalculate();
+Expected Output: 51
 
 #### Describe Cart()
 
