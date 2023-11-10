@@ -54,6 +54,15 @@ Code: const testCart = new Cart(24);
       testCart;
 Expected Output: Cart { totalCost: 24}
 
+
+#### Describe Cart.prototype.addToCart
+
+Test: It should add the cost of a pizza to the cart's totalCost.
+Code: let testCart = new Cart();
+      testCart.addToCart(24);
+      testCart.totalCost;
+Expected Output: 24
+
 ## Setup/Installation Requirements
 
 * To view on the web, open a web broswer and type https://noahkise.github.io/pizza-parlor into the navigation bar and press enter.
