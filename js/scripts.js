@@ -36,6 +36,7 @@ Cart.prototype.addToCart = function (itemCost) {
   this.totalCost += itemCost;
 };
 
+
 // UI Logic
 
 function formatChoices(choice) {
