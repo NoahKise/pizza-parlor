@@ -99,8 +99,8 @@ Expected Output: 87
 
 ## License
 
-[GPL](LICENSE.txt)
+Code licensed under [GPL](LICENSE.txt)
 
 Any suggestions for ways I can improve this layout? Reach out to me at noah@kisefamily.com
 
-Copyright (c) November 3rd 2023 Noah Kise
+Copyright (c) November 10 2023 Noah Kise
