@@ -51,6 +51,7 @@ Expected Output: 43
 
 Test: Should return a cart object with a property for totalCost.
 Code: const testCart = new Cart(24);
+      testCart;
 Expected Output: Cart { totalCost: 24}
 
 ## Setup/Installation Requirements
