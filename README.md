@@ -63,6 +63,14 @@ Code: let testCart = new Cart();
       testCart.totalCost;
 Expected Output: 24
 
+Test: It should accumulate a running total cost each time a new pizza is added.
+Code: let testCart = new Cart();
+      testCart.addToCart(24);
+      testCart.addToCart(28);
+      testCart.addToCart(35);
+      testCart.totalCost;
+Expected Output: 87
+
 ## Setup/Installation Requirements
 
 * To view on the web, open a web broswer and type https://noahkise.github.io/pizza-parlor into the navigation bar and press enter.
