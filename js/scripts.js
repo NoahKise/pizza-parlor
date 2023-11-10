@@ -28,9 +28,13 @@ Pizza.prototype.costCalculate = function () {
   return pizzaCost;
 };
 
-function Cart(totalCost) {
-  this.totalCost = totalCost
+function Cart() {
+  this.totalCost = 0
 }
+
+Cart.prototype.addToCart = function (itemCost) {
+  this.totalCost += itemCost;
+};
 
 // UI Logic
 

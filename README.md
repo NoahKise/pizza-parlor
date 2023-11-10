@@ -50,9 +50,9 @@ Expected Output: 43
 #### Describe Cart()
 
 Test: Should return a cart object with a property for totalCost.
-Code: const testCart = new Cart(24);
+Code: const testCart = new Cart();
       testCart;
-Expected Output: Cart { totalCost: 24}
+Expected Output: Cart { totalCost: 0}
 
 
 #### Describe Cart.prototype.addToCart
