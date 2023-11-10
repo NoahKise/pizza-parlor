@@ -41,6 +41,11 @@ Code: let myPizza = new Pizza("giant", "red", "mozzarella");
       myPizza.costCalculate();
 Expected Output: 35
 
+Test: It should check if the selected sauce is Pesto and if so add 2 to the pizzaCost.
+Code: let myPizza = new Pizza("large", "pesto", "mozzarella");
+      myPizza.costCalculate();
+Expected Output: 22
+
 Test: It should check the number of veggie toppings on the pizza and add to the cost based on how many are present.
 Code: let myPizza = new Pizza("large", "red", "mozzarella");
       myPizza.costCalculate();
