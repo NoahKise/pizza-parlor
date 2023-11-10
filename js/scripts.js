@@ -32,7 +32,9 @@ function Cart() {
   this.totalCost = 0
 }
 
-
+Cart.prototype.addToCart = function (itemCost) {
+  this.totalCost += itemCost;
+};
 
 // UI Logic
 
