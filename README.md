@@ -47,6 +47,12 @@ Test: It should charge more per topping if the pizza size is giant.
 Code: myPizza.costCalculate(); (assuming giant pizza with 1 veggie topping and 1 meat topping)
 Expected Output: 43
 
+#### Describe Cart()
+
+Test: Should return a cart object with a property for totalCost.
+Code: const testCart = new Cart(24);
+Expected Output: Cart { totalCost: 24}
+
 ## Setup/Installation Requirements
 
 * To view on the web, open a web broswer and type https://noahkise.github.io/pizza-parlor into the navigation bar and press enter.
