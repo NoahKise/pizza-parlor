@@ -87,13 +87,11 @@ Expected Output: 87
 
 ## Setup/Installation Requirements
 
-* To view on the web, open a web broswer and type https://noahkise.github.io/pizza-parlor into the navigation bar and press enter.
+* To run this program locally on your own computer, first navigate to the repository (https://github.com/NoahKise/pizza-parlor).  Clone the project by clicking the green "code" button and then copying the provided https link. In your terminal, enter the command "git clone" followed by the copied link. Navigate to the root folder of this project (pizza-parlor) in your terminal and enter the command "code ." to open the project in VS Code. Finally, run a live server to view the project by clicking "Go Live" in the index.html file.
 
-* To view github repository containing code, open a web browser and type https://github.com/NoahKise/pizza-parlor into the navigation bar and press enter.
+* To view on the web via GH Pages, open a web broswer and type https://noahkise.github.io/pizza-parlor into the navigation bar and press enter.
 
 ## Known Bugs
-
-* The variable totalCartCost is defined globally, and I would have liked to write another function for it to avoid this but ran out of time.
 
 * After you place an order you can still add more items to the cart. Again, something I would like to change but ran out of time.
 
